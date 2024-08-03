@@ -311,7 +311,7 @@
                         <h5>Profil</h5>
                         <p>Desa Air Putih</p>
                         <p>Visi & Misi</p>
-                        <p>Sejarah Desa</p>
+                        <p>Sejarah Desa Air Putih</p>
                     </div>
                     <div class="col-md-4">
                         <h5>Follow Us</h5>
