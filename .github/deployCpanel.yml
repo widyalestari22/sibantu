@@ -1,0 +1,21 @@
+name: Publish To Cpanel
+on:
+  push:
+    branches:
+      - Main
+
+jobs:
+  FTP-Deploy-Action:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup FTP deploy action
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        
